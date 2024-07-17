@@ -1,0 +1,19 @@
+.testimonials {
+  margin: 2% 0;
+  width: 100%;
+  height: 60vh;
+  @include FR;
+  @include MFD;
+  justify-content: start;
+  overflow: auto;
+  scrollbar-width: none;
+  .tes {
+    min-width: 100%;
+    font-size: 1.6rem;
+    @include FC;
+    text-align: center;
+    h6 {
+      font-size: 2rem;
+    }
+  }
+}

@@ -1,0 +1,60 @@
+.history {
+    margin: 2% 0;
+  width: 100%;
+  height: 100vh;
+  //   @include MFD;
+  gap: 1%;
+  @include FC;
+  .rows {
+    width: 100%;
+    height: 70%;
+    &:first-child{
+        position: relative;
+        .infoimg{
+            display: none;
+            color: gold;
+            letter-spacing: 1rem;
+            line-height: 2rem;
+        }
+        &:hover{
+            .infoimg{
+                font-size: 7rem;
+                width: 100%;
+                height: 100%;
+               @include FR;
+
+               backdrop-filter: blur(2px);
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translateX(-50%) translateY(-50%);
+                // @include MFD;
+            }
+        }
+    }
+    // @include MFD;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius:20px ;
+    }
+    &:last-child {
+      height: 30%;
+      width: 100%;
+      padding: 0 2%;
+      color: wheat;
+      @include FC;
+      gap: 5%;
+      font-size: 1rem;
+      h4 {
+        text-align: center;
+        font-size: 1.2rem;
+       ;
+      }
+      p {
+        text-align: left;
+      }
+    }
+  }
+}

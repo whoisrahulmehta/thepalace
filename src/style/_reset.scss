@@ -1,0 +1,194 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent !important;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.0); /* Adjust color and opacity */
+  border-radius: 10px; /* Rounded corners */
+  border: 1px solid transparent; /* Optional: Add some padding around the thumb */
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: rgba(0, 0, 0, 0.7); /* Darker on hover */
+}
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #535bf2;
+}
+
+$main: darken(black, 10%);
+$baseBR: 10px;
+$hover-col: lighten(green, 20%);
+$parallax-depth: 0.5;
+$color: white;
+$secondary: white;
+// $tertiary: yellowgreen;
+$primary: pink;
+* {
+  // border: 1px solid white;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  transition: all ease 0.12s;
+  scrollbar-width: none;
+  font-family: "Ubuntu Condensed", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+@mixin FR {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@mixin FC {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: space-evenly;
+}
+%box {
+  border: 1px solid tansparent;
+  border-radius: $baseBR;
+}
+@mixin MFD {
+  @extend %box;
+  background: rgba(255, 255, 255, 0.1);
+  border-color: rgba(255, 255, 255, 0.2);
+  color: white;
+}
+@mixin MFL {
+  @extend %box;
+  background: rgba(0, 0, 0, 1);
+  border-color: rgba(0, 0, 0, 0.2);
+  color: black;
+}
+a {
+  height: 100%;
+  width: 100%;
+  color: black;
+  text-decoration: none;
+  &:hover {
+    //  font-size: 1rem;;
+    color: $primary;
+    text-decoration: none;
+  }
+}
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  aspect-ratio: 3/2;
+}
+.active {
+  border-bottom: 0.5px solid $primary;
+  color: $primary;
+}
+
+body,
+.App {
+  background: $main;
+  color: white;
+  width: 100%;
+  height: 100vh;
+  overflow-y: auto;
+  overflow-x: hidden;
+  scrollbar-width: none;
+  scroll-behavior: smooth;
+ /* For Webkit browsers */
+}
+body{
+  scroll-snap-type: y mandatory;
+  .App{
+    scroll-snap-align: center;
+  }
+}
+
+// ANIMATIONS
+.slideintop {
+  animation: slideintop ease 1s forwards;
+  @keyframes slideintop {
+    from {
+      transform: translateY(-100%);
+    }
+    to {
+      transform: translateY(0%);
+    }
+  }
+}
+.slideinleft {
+  animation: slideinleft ease-in 1s forwards;
+  @keyframes slideinleft {
+    from {
+      transform: translateX(-100%);
+    }
+    to {
+      transform: translateX(0%);
+    }
+  }
+}
+.slideinright {
+  animation: slideinright ease-in 1s forwards;
+  @keyframes slideinright {
+    from {
+      transform: translateX(100%);
+    }
+    to {
+      transform: translateX(0%);
+    }
+  }
+}
+
+//inputs
+input,
+select {
+  font-size: 1rem;
+  height: 50%;
+  width: 20%;
+  // height: 10%;
+  // font-size: 1rem;
+  color: white;
+  background: transparent;
+  border: 0;
+  outline: 0;
+  border-bottom: 1px solid white;
+  margin: 0 2%;
+  &::placeholder {
+    color: lighten(white, 2%);
+    padding-left: 2%;
+  }
+  &:focus {
+    color: lighten(red, 23%);
+    border-color: lightblue;
+    &::placeholder {
+      color: lighten(red, 23%);
+    }
+  }
+  option {
+    background-color: black;
+    color: white;
+  }
+}

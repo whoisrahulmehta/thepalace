@@ -1,0 +1,72 @@
+footer {
+  height: 50vh;
+  width: 100%;
+  @include MFD;
+  @include FR;
+  a{
+    height: 10%;
+  }
+
+  gap: 0.5%;
+  .fbox {
+    &:first-child {
+      width: 40%;
+      align-items: center;
+
+      gap: 4%;
+      p,a {
+        width: 30%;
+      }
+      .social {
+        @include FR;
+        font-size: 2rem;;
+        gap: 5%;
+        height: 10%;
+        width: 60%;
+        // @include MFD;
+        span {
+          width: 10%;
+          height: 100%;
+          border-radius: 50%;
+          // @include MFD;
+          &:hover{
+            color: lightblue;
+            transform: scale(1.2);
+          }
+        }
+      }
+    }
+    @include FC;
+    justify-content: center;
+    gap: 3%;
+    text-align: left;
+    align-items: center;
+    height: 100%;
+    width: 19%;
+    // @include MFD;
+    p,
+    h1,a {
+      width: 60%;
+    }
+  }
+  
+}
+.end{
+  width: 100%;
+  height: 20vh;
+  @include FC;
+  text-align: center;
+  border-top: 1px solid white;
+  padding: 2%;
+  gap: 2%;
+  margin: 2% 0;
+  p,a{
+    font-size: 0.7rem;
+    opacity: 0.8;
+    width: 100%;
+  }
+  .muted{
+    color: gray;
+    opacity: 0.4;
+  }
+}

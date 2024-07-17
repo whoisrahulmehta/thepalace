@@ -1,0 +1,218 @@
+header {
+  padding-top: 5%;
+  width: 100%;
+  height: 100dvh;
+  background: darken($primary, 40%);
+  @include FR;
+  justify-content: space-evenly;
+  .rows {
+    width: 40%;
+    height: 100%;
+    // border: 1px solid white;
+    &:last-child {
+    //   height: 40%;
+    //   width: 40%;
+      border-radius: 50px;
+    //   background-color: white;
+      position: relative;
+    img{
+        width: 40%;
+        height: 40%;
+        &:first-child{
+            z-index: 3;
+            width: 70%;
+            height: 70%;;
+            position: absolute;
+            right: 0%;
+            bottom: 0%;
+            filter: drop-shadow(-10px -10px 20px black  );
+        }
+        &:last-child{
+            z-index: 2;
+            width: 70%;
+            height: 70%;;
+            position: absolute;
+            left: 00%;
+            bottom: 10%;
+        }
+        &:nth-child(2){
+            z-index: 1;
+            width: 50%;
+            height: 50%;;
+            position: absolute;
+            right: 10%;
+            bottom: 30%;
+        }
+    }
+
+    //   border: 1px solid white;
+    }
+  }
+  .row1 {
+    @include FC;
+    align-items: start;
+    justify-content: space-evenly;
+    .heading {
+      width: 100%;
+      height: 10%;
+
+      h1 {
+        font-style: italic;
+        position: relative;
+        font-size: 3rem;
+        &::first-letter {
+          font-size: 4rem;
+        }
+        p {
+          font-size: 1.4rem;
+          position: absolute;
+          top: 4%;
+          left: 10%;
+        }
+      }
+    }
+ 
+    .dsc {
+      width: 80%;
+      margin: 0 auto;
+      .brand {
+        color: gold;
+      }
+      p {
+        padding: 2%;
+        font-size: 1.1rem;
+      }
+    }
+    .btn {
+      width: 100%;
+      height: 10%;
+      @include FR;
+    }
+    button {
+      background: gold;
+      color: darken(pink, 40%);
+      width: 20%;
+      height: 50%;
+      border: 0;
+      border-radius: 50px;
+      transition: all ease 0.25s;
+      &:hover {
+        background: darken(pink, 30%);
+        color: gold;
+        border: 1px solid gold;
+        transform: scale(1.05);
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1020px) {
+  header {
+    padding-top: 5%;
+    width: 100%;
+    height: 100dvh;
+    background: darken($primary, 40%);
+    @include FR;
+    justify-content: space-evenly;
+    .rows {
+      width: 40%;
+      height: 100%;
+      // border: 1px solid white;
+      &:last-child {
+      //   height: 40%;
+      //   width: 40%;
+        border-radius: 50px;
+      //   background-color: white;
+        position: relative;
+      img{
+          width: 40%;
+          height: 40%;
+          &:first-child{
+              z-index: 3;
+              width: 70%;
+              height: 70%;;
+              position: absolute;
+              right: 0%;
+              bottom: 0%;
+              filter: drop-shadow(-10px -10px 20px black  );
+          }
+          &:last-child{
+              z-index: 2;
+              width: 70%;
+              height: 70%;;
+              position: absolute;
+              left: 00%;
+              bottom: 10%;
+          }
+          &:nth-child(2){
+              z-index: 1;
+              width: 50%;
+              height: 50%;;
+              position: absolute;
+              right: 10%;
+              bottom: 30%;
+          }
+      }
+  
+      //   border: 1px solid white;
+      }
+    }
+    .row1 {
+      @include FC;
+      align-items: start;
+      justify-content: space-evenly;
+      .heading {
+        width: 100%;
+        height: 10%;
+  
+        h1 {
+          font-style: italic;
+          position: relative;
+          font-size: 3rem;
+          &::first-letter {
+            font-size: 4rem;
+          }
+          p {
+            font-size: 1.4rem;
+            position: absolute;
+            top: 4%;
+            left: 10%;
+          }
+        }
+      }
+   
+      .dsc {
+        width: 80%;
+        margin: 0 auto;
+        .brand {
+          color: gold;
+        }
+        p {
+          padding: 2%;
+          font-size: 1.1rem;
+        }
+      }
+      .btn {
+        width: 100%;
+        height: 10%;
+        @include FR;
+      }
+      button {
+        background: gold;
+        color: darken(pink, 40%);
+        width: 20%;
+        height: 50%;
+        border: 0;
+        border-radius: 50px;
+        transition: all ease 0.25s;
+        &:hover {
+          background: darken(pink, 30%);
+          color: gold;
+          border: 1px solid gold;
+          transform: scale(1.05);
+        }
+      }
+    }
+  }
+}
+

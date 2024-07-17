@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Condensed&display=swap');
+
+@import './style/reset';
+@import './style/loading';
+@import './style/navbar';
+@import './style/header';
+@import './style/about';
+@import './style/reviews';
+@import  './style//team';
+@import './style/history';
+@import './style/testimonial';
+@import './style//aval';
+@import './style/menu';
+@import './style/subs';
+@import './style/footer';
+@import './style/contact';
+@import './style/recipes';
+@import './style/menufull';
+@import './style/error';
+@import './style/home';
+
+html, body {
+    height: 100%;
+    overflow: hidden;
+  }
+  
+  [data-scroll-container] {
+    overflow: hidden;
+  }
