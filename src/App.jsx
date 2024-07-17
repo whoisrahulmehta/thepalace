@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { HashRouter, Route, Routes } from "react-router-dom";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Loading from "./components/Loading";
 import Navbar from "./components/Navbar";
 import Home from './components/Home'
@@ -21,7 +21,7 @@ function App() {
     return () => clearTimeout(timer);
   }, []);
   return (
-    <HashRouter>
+    <Router>
       {loading ? (
         <Loading />
       ) : (
@@ -39,7 +39,7 @@ function App() {
           <Footer />
         </div>
       )}
-    </HashRouter>
+    </Router>
   );
 }
 
