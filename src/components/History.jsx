@@ -4,8 +4,20 @@ function History() {
   return (
     <div className="history">
       <div className="rows">
-        <img src="/1667382059.png" alt="img" />
-        <p className="infoimg " style={{color:"gold", fontWeight:"900", textTransform: "uppercase"}}>Palais De L'amour</p>
+        <img
+          src="https://github.com/whoisrahulmehta/assetsforwebsites/raw/ffafb122f09c33bf635959713e1d33c7af5d5744/thepalace/1667382059.png"
+          alt="img"
+        />
+        <p
+          className="infoimg "
+          style={{
+            color: "gold",
+            fontWeight: "900",
+            textTransform: "uppercase",
+          }}
+        >
+          Palais De L'amour
+        </p>
       </div>
       <div className="rows">
         <h4>The Rich History of Palais De L'amour</h4>

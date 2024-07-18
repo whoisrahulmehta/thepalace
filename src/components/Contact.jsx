@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import Navbar from "./Navbar";
+import { useNavigate } from "react-router-dom";
 
 function Contactus() {
   const [result, setResult] = React.useState("");
@@ -26,6 +27,8 @@ function Contactus() {
       setResult(data.message);
     }
   };
+
+  const navigate =useNavigate();
 
   return (
     <div className="ContactUs">
@@ -99,7 +102,7 @@ function Contactus() {
             </span>
           </p>
           <p>Regards !</p>
-          <button type="submit">Get A Response</button>
+          <button type="submit" onClick={()=>setTimeout(()=>navigate('/'),5000)}>Get A Response</button>
         </form>
       </section>
     </div>

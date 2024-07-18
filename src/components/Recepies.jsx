@@ -128,9 +128,16 @@ function Recepies() {
         },
       ].map((dish, dI) => (
         <div className="rcard" key={dI}>
-          <span className={`${dish.category} cate`}><b><FaCircle /></b></span>
+          <span className={`${dish.category} cate`}>
+            <b>
+              <FaCircle />
+            </b>
+          </span>
           <div className="rimage">
-            <img src="/burger.png" alt="image" />
+            <img
+              src="https://github.com/whoisrahulmehta/assetsforwebsites/raw/ffafb122f09c33bf635959713e1d33c7af5d5744/thepalace/burger.png"
+              alt="image"
+            />
             {/* <img src={dish.image} alt="image" /> */}
           </div>
           <div className="rdsc">

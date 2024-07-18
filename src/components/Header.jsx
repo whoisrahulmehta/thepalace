@@ -5,7 +5,7 @@ function Header() {
   const navigate = useNavigate();
   return (
     <header>
-      <div className="rows row1" >
+      <div className="rows row1">
         <div className="heading">
           <h1>
             Restraunt <p> French Cousine </p>
@@ -24,13 +24,25 @@ function Header() {
           </p>
         </div>
         <div className="btn">
-          <button onClick={()=>navigate('/book')}>Book Now !</button>
+          <button onClick={() => navigate("/book")}>Book Now !</button>
         </div>
       </div>
       <div className="rows row2">
-        <img className="slideintop" src="/burger.png" alt="img" />
-        <img className="slideinleft" src="/burger.png" alt="img" />
-        <img className="slideinright" src="/burger.png" alt="img" />
+        <img
+          className="slideintop"
+          src="https://github.com/whoisrahulmehta/assetsforwebsites/raw/ffafb122f09c33bf635959713e1d33c7af5d5744/thepalace/burger.png"
+          alt="img"
+        />
+        <img
+          className="slideinleft"
+          src="https://github.com/whoisrahulmehta/assetsforwebsites/raw/ffafb122f09c33bf635959713e1d33c7af5d5744/thepalace/burger.png"
+          alt="img"
+        />
+        <img
+          className="slideinright"
+          src="https://github.com/whoisrahulmehta/assetsforwebsites/raw/ffafb122f09c33bf635959713e1d33c7af5d5744/thepalace/burger.png"
+          alt="img"
+        />
       </div>
     </header>
   );

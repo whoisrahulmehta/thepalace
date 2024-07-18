@@ -9,7 +9,7 @@ function Aboutfood() {
     <div className="aboutfood">
       <div className="golden">
         <motion.div className="image" initial={{ scale:0, rotateZ:'720deg'}} whileInView={{scale:1, rotateZ:0}} transition={{duration:2}}>
-            <img src="/foodplate.png " alt="food"/>
+            <img src="https://github.com/whoisrahulmehta/assetsforwebsites/raw/ffafb122f09c33bf635959713e1d33c7af5d5744/thepalace/foodplate.png " alt="food"/>
         </motion.div>
         <div className="text">
           <h1>About our Recepies</h1>

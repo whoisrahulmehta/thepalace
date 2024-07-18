@@ -7,7 +7,7 @@ function Navbar() {
     <nav>
       <div className="brand">
         <p style={{textTransform:"uppercase"}}>
-          <span><img src="/favicon.png"alt="img" />palais de l'amour </span>
+          <span><img src="https://github.com/whoisrahulmehta/assetsforwebsites/raw/ffafb122f09c33bf635959713e1d33c7af5d5744/thepalace/favicon.png"alt="img" />palais de l'amour </span>
         </p>
       </div>
       <div className="navmenu">

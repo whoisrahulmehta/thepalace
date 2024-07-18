@@ -69,7 +69,10 @@ function Menucard() {
             <div className="image">
               {" "}
               {/* <img src={dish.image} alt="image" />{" "} */}
-              <img src="/burger.png" alt="image" />{" "}
+              <img
+                src="https://github.com/whoisrahulmehta/assetsforwebsites/raw/ffafb122f09c33bf635959713e1d33c7af5d5744/thepalace/burger.png"
+                alt="image"
+              />{" "}
             </div>
             <div className="name">
               {" "}
